@@ -1,14 +1,14 @@
-## Boolean-Interpreter/Parser (C++)
+# Boolean-Interpreter/Parser (C++)
 
 ## Synopsis
 
-An LL(1) grammar predictive parser for Boolean expressions that checks syntax using recursive descent parsing and
+As apart of learning more about how to make programming languages I created an LL(1) grammar predictive parser for Boolean expressions that checks syntax using recursive descent parsing and
 evaluates the expression. Implementation required generating first, follow, and selection sets for predictive parsing.
 
 
 ## Predictive Parsing
 
-A predictive parser is a recursive descent parser that does not require backtracking. Predictive parsing is possible only for the class of LL(k) grammars, which are the context-free grammars for which there exists some positive integer k that allows a recursive descent parser to decide which production to use by examining only the next k tokens of input. This predictive parser is based upon the following syntax  
+Predictive parsing is when a recursive descent interpreter does not require backtracking. Predictive parsing is possible only for LL(k) grammars, these are context-free grammars for which there exists some positive integer k that allows the interpreter to decide which production to use by examining only the next k tokens of input. This particular predictive parser is utilized for only Boolean functions rather than an entire programming language, but the method of parsing is still the same as any major programming language.
 
 
 ## Input
@@ -28,7 +28,9 @@ Expressions may contain white spaces and white spaces are considered to be delim
 
 Although the operations results are simple, it is the method of syntax checking that was the motivation for this project. Below is the syntax used to create this interpreter. 
 
-## Syntax
+## Syntax 
+
+This syntax and the corresponding selection sets allow predictive parsing to be possible (boy that a lot of 'Ps'),
 
 ```
 <B> 		::= <IT>. 							{~,T,F,(}
