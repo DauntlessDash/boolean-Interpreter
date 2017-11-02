@@ -15,12 +15,12 @@ A predictive parser is a recursive descent parser that does not require backtrac
 
 This program prompts the user to input a Boolean string that ends in a "." and is made up of the following symbols:
 
-T		: TRUE
-F		: FALSE
-^		: AND
-v		: OR
-~		: NOT
-->		: IMPLICATION
+*T		: TRUE
+*F		: FALSE
+*^		: AND
+*v		: OR
+*~		: NOT
+*->		: IMPLICATION
 
 Expressions may contain white spaces and white spaces are considered to be delimiters(i.e. a white space between the - and > of the implication symbol would be a syntax error). This program checks if the expression is of valid syntax and (if valid) computes the value of the expression. The output will either be an error message or a message that gives the value of the expression.
 
