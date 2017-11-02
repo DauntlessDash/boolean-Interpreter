@@ -28,7 +28,7 @@ Expressions may contain white spaces and white spaces are considered to be delim
 
 Although the operations results are simple, it is the method of syntax checking that was the motivation for this project. Below is the syntax used to create this interpreter. 
 
-##Syntax
+## Syntax
 
 ```
 <B> 		::= <IT>. 							{~,T,F,(}
@@ -48,7 +48,7 @@ Although the operations results are simple, it is the method of syntax checking 
 			::=(<IT>)							{(}
 ```
 
-##Syntactic Domains
+## Syntactic Domains
 
 ```
 <B> : Bool_stmt
@@ -62,9 +62,9 @@ Although the operations results are simple, it is the method of syntax checking 
 <A> : Atom
 ```
 
-##Semantic Equations
+## Semantic Equations
 
-![Alt text](https://imgur.com/S9xFRnW "Click Here for Image")
+![Semantic Equations](https://github.com/DauntlessDash/boolean-Interpreter/blob/master/Semantic_Equations.png)
 
 
 
