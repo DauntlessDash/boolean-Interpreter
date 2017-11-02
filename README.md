@@ -32,23 +32,7 @@ Although the operations results are simple, it is the method of syntax checking 
 
 This syntax and the corresponding selection sets allow predictive parsing to be possible (boy that a lot of 'Ps'),
 
-```
-<B> 		::= <IT>. 							{~,T,F,(}
-<IT> 		::= <OT> <IT_Tail>	 				{~,T,F,(}
-<IT_Tail> 	::= -> <OT><IT_Tail>				{->}
-			::= NULL							{.,)}
-<OT> 		::= <AT> <OT_Tail>					{~,T,F,(}
-<OT_Tail> 	::= v <AT> <OT_Tail>				{v}
-			::= NULL							{->,.,)}
-<AT> 		::= <L> <AT_Tail> 					{~,T,F,(}
-<AT_Tail>	::= ^ <L> <AT_Tail> 				{^}
-			::= NULL							{V,->,.,)}
-<L> 		::= <A>								{T,F,(}
-			::= ~<L>							{~}
-<A>			::= T								{T}
-			::= F								{F}
-			::=(<IT>)							{(}
-```
+![Semantic Equations](https://github.com/DauntlessDash/boolean-Interpreter/blob/master/Syntax.png)
 
 ## Syntactic Domains
 
